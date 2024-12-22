@@ -13,7 +13,9 @@ title: Welcome to Evidence
   from needful_things.orders
   group by category
 ```
-
+```sql main_detail
+select * from mastersheet.mastersheet_nov24
+```
 <Dropdown data={categories} name=category value=category>
     <DropdownOption value="%" valueLabel="All Categories"/>
 </Dropdown>
