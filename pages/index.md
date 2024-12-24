@@ -40,7 +40,3 @@ State_Region as Region,cast(count(Enrollment_number) as INT) as 'No. of Youth'
     y='No. of Youth'
     fmt =#,##0
 />
-
-```sql city_details
-select * from mastersheet.region
-```
