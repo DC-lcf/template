@@ -5,9 +5,10 @@ title: Lighthouse Program Overview
 
 ```sql main_detail
 select 
-State_Region,Centre_name,Enrollment_number,Youths_name,Gender,FC_Start_date,FC_Status,Course_1_Category,Course_1_Start_Date,Course_1_Status,Employment/Entrepreneurship_Status,Job_Role_Offered,Job_Industry,Job_Monthly_Income,Job_Start_Date
+*
  from mastersheet.mastersheet_nov24
 ```
+
 
 ```sql lh_centre
 select
@@ -39,3 +40,7 @@ State_Region as Region,cast(count(Enrollment_number) as INT) as 'No. of Youth'
     y='No. of Youth'
     fmt =#,##0
 />
+
+```sql city_details
+select * from mastersheet.region
+```
